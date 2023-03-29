@@ -26,5 +26,6 @@ streamlit.header("Fruityvice Fruit Advice!")
 # New Section2
 streamlit.header("Fruityvice Fruit Advice2!")
 Fruit_choice = streamlit.text_input("Pick some fruits:", 'Kiwi')
+streamlit.write('User Entered', Fruit_choice)
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + Fruit_choice)
