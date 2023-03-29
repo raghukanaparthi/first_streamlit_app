@@ -26,4 +26,4 @@ streamlit.dataframe(fruityvice_normalized)
 # New Section2
 streamlit.header("Fruityvice Fruit Advice2!")
 #Fruit_choice = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado', 'Strawberries'])
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + Fruit_choice)
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruits_selected)
