@@ -15,7 +15,7 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 # Display the table on the page.
 streamlit.dataframe(fruits_to_show)
 # New Section1
-streamlit.header("Fruityvice Fruit Advice!")
+# streamlit.header("Fruityvice Fruit Advice!")
 #import requests
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Kiwi")
 #streamlit.text(fruityvice_response.json())
@@ -24,8 +24,8 @@ streamlit.header("Fruityvice Fruit Advice!")
 # write your own comment - what does this do?
 #streamlit.dataframe(fruityvice_normalized)
 # New Section2
-streamlit.header("Fruityvice Fruit Advice2!")
-fruit_choice = streamlit.text_input("Pick some fruits:", 'Kiwi')
-streamlit.write('User Entered', Fruit_choice)
+streamlit.header("Fruityvice Fruit Advice2")
+fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+streamlit.write('The user entered ', fruit_choice)
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
